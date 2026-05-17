@@ -61,7 +61,7 @@ def mock_database(monkeypatch):
     return fake_db
 
 
-@pytest_asyncio.fixture
+@pytest_asyncio.fixture(scope="function")
 async def async_client(mock_database):
     async with AsyncClient(app=main.app, base_url="http://testserver") as client:
         yield client
