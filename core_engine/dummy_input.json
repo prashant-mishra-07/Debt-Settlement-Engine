@@ -1,0 +1,19 @@
+{
+  "transactions": [
+    {
+      "from_user": "A",
+      "to_user": "B",
+      "amount": 100.0
+    },
+    {
+      "from_user": "B",
+      "to_user": "C",
+      "amount": 100.0
+    },
+    {
+      "from_user": "C",
+      "to_user": "A",
+      "amount": 100.0
+    }
+  ]
+}

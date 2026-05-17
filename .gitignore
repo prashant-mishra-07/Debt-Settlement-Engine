@@ -1,0 +1,40 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Virtual environments
+venv/
+.env
+.env.*
+
+# Node artifacts
+frontend/node_modules/
+frontend/dist/
+
+# Docker build artifacts
+docker-compose.override.yml
+**/Dockerfile*
+.dockerignore
+
+# C++ build outputs
+core_engine/build/
+**/*.o
+**/*.obj
+**/*.exe
+**/*.out
+**/*.dll
+**/*.so
+**/*.dylib
+
+# Temp and editor files
+*.log
+*.tmp
+*.swp
+*.DS_Store
+
+# Local IPC temp files
+temp_input_*.json
+output.json
