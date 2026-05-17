@@ -3,6 +3,7 @@ import sys
 from types import SimpleNamespace
 
 import pytest
+import pytest_asyncio
 from httpx import AsyncClient
 from unittest.mock import AsyncMock
 
@@ -60,7 +61,7 @@ def mock_database(monkeypatch):
     return fake_db
 
 
-@pytest.fixture
+@pytest_asyncio.fixture
 async def async_client(mock_database):
     async with AsyncClient(app=main.app, base_url="http://testserver") as client:
         yield client
